@@ -1,0 +1,126 @@
+{
+    // Python
+    "[python]": {
+        "editor.defaultFormatter": "charliermarsh.ruff",
+        "editor.guides.highlightActiveBracketPair": true,
+        "editor.guides.bracketPairs": true,
+    },
+    "python.useEnvironmentsExtension": true,
+    "python.analysis.typeCheckingMode": "standard",
+    "python.createEnvironment.trigger": "off",
+    "python.languageServer":"Pylance",
+
+
+    "editor.codeActionsOnSave": {
+        "source.fixAll.ruff": "always",
+        "source.organizeImports.ruff": "explicit",
+        "source.unusedImports": "never",
+    },
+
+    "ruff.lint.enable": false,
+    // "ruff.args": [
+    //     "--ignore", "I001", "I002", "I003"
+    // ],
+
+
+    // Notebook
+    "notebook.codeActionsOnSave": {
+        "notebook.source.fixAll.ruff": "explicit",
+        "notebook.source.organizeImports.ruff": "explicit",
+        "notebook.source.unusedImports": "explicit",
+    },
+    "notebook.defaultFormatter": "charliermarsh.ruff",
+    "notebook.formatOnSave.enabled": true,
+    "notebook.cellToolbarLocation": {
+        "default": "left"
+    },
+    "notebook.cellToolbarVisibility": "hover",
+    "notebook.diff.ignoreOutputs": true,
+    "notebook.diff.ignoreMetadata": true,
+    "notebook.output.scrolling": true,
+    "notebook.outline.showCodeCellSymbols": true,
+    "notebook.cellFocusIndicator": "border",
+    "notebook.showFoldingControls": "always",
+    "notebook.lineNumbers": "on",
+    "notebook.cellExecutionTimeVerbosity": "verbose",
+
+    "accessibility.signals.notebookCellFailed": {
+        "sound": "on"
+    },
+
+    // Jupyter
+    "jupyter.themeMatplotlibPlots": true,
+    "jupyter.widgetScriptSources": [
+        "unpkg.com",
+        "jsdelivr.com"
+    ],
+    "jupyter.notebookRunGroups.runIconsOnCell": true,
+
+    "dataWrangler.experiments.copilot.enabled": false,
+
+    // Terminal
+    "terminal.explorerKind": "external",
+    "terminal.integrated.defaultProfile.osx": "zsh",
+    "terminal.integrated.fontFamily": "MesloLGS NF",
+    "terminal.integrated.fontLigatures.enabled": true,
+
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook"
+    },
+    "workbench.tree.indent": 12,
+    "workbench.tree.renderIndentGuides": "always",
+    "workbench.colorTheme": "Monokai Vibrant",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.productIconTheme": "fluent-icons",
+    "workbench.secondarySideBar.defaultVisibility": "hidden",
+
+
+    "editor.inlineSuggest.enabled": false,
+    "editor.lineHeight": 17,
+    "editor.formatOnSave": true,
+    "editor.formatOnType": false,
+    "editor.formatOnPaste": true,
+    "editor.linkedEditing": true,
+    "editor.detectIndentation": true,
+    "editor.cursorBlinking": "expand",
+    "editor.smoothScrolling": true,
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    "editor.fontFamily": "MesloLGS NF, Monaco, 'Courier New', monospace",
+    "editor.inlineSuggest.edits.allowCodeShifting": "never",
+    "editor.inlineSuggest.edits.renderSideBySide": "never",
+
+
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": true,
+    "files.autoSave": "afterDelay",
+    "files.exclude": {
+        "**/.csv": true,
+        "**/.parquet": true,
+        "**/.pkl": true,
+        "**/.xls": true
+    },
+
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "makefile.configureOnOpen": true,
+
+    // IA
+    "chat.disableAIFeatures": true,
+    "chat.agent.thinking.terminalTools": false,
+    "github.copilot.nextEditSuggestions.enabled": false,
+    "github.copilot.chat.gemini35FlashReducedToolUsePrompt.enabled": false,
+
+
+    "auto-rename-tag.activationOnLanguage": [
+        "html",
+        "xml",
+        "php",
+        "javascript"
+    ],
+    "window.density.layout": "compact",
+}

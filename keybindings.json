@@ -1,0 +1,15 @@
+// Placer vos combinaisons de touches dans ce fichier pour remplacer les valeurs par défaut
+[
+    {
+        "key": "alt+q",
+        "command": "notebook.cell.executeCellsAbove"
+    },
+    {
+        "key": "alt+z",
+        "command": "notebook.cell.executeCellAndBelow"
+    },
+    {
+        "key": "alt+a",
+        "command": "notebook.execute"
+    }
+]
