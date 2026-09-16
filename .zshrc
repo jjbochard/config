@@ -93,7 +93,13 @@ cp ~/Library/Application\ Support/Code/User/keybindings.json $config_folder_path
 # =========================================
 
 # Syntax highlighting
+
+# Homebrew Path
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# WSL Path
+source /home/jeremy/.oh-my-zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.plugin.zsh
+
 # =========================================
 
 # Pyenv
