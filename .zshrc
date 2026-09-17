@@ -23,6 +23,7 @@ plugins=(
     vscode
     z
     poetry
+    v
     brew
     colored-man-pages
     sudo
