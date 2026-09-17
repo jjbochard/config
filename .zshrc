@@ -23,7 +23,7 @@ plugins=(
     vscode
     z
     poetry
-    v
+    uv
     brew
     colored-man-pages
     sudo
@@ -36,7 +36,10 @@ source $ZSH/oh-my-zsh.sh
 # Alias
 alias md="mkdir -p"
 alias rd="rmdir"
-# alias -="cd -"
+#alias -="cd -"
+alias ...="../.."
+alias ....="../../.."
+alias _="sudo"
 
 alias history="omz_history"
 alias h="history"
@@ -61,14 +64,16 @@ alias gba="git branch --all"
 alias gcb="git branch -b"
 alias gcm="git checkout $(git_main_branch)"
 alias gco="git commit -m"
-alias gpull="git pull"
-alias gpush="git push"
+alias gpl="git pull"
+alias gps="git push"
 alias gsu="git push --set-upstream origin "$(git_current_branch)""
 alias gl="glods --all"
 alias gs="git status --short --branch"
 alias gundo="git reset --mixed HEAD^"
 alias gfp="git push --force-with-lease origin HEAD:main"
 alias gsh="git show"
+alias gst="git stash"
+alias gstp="git stash pop"
 # alias gwip="git add -A; git rm $(git ls-files --deleted) 2> /dev/null; git commit --no-verify --no-gpg-sign --message "--wip-- [skip ci]""
 
 
@@ -79,6 +84,27 @@ alias pipir="pip install -r requirements.txt"
 alias pipl="pip list -o"
 alias pipiu="pip install --upgrade"
 alias pipu="pip uninstall"
+
+#brew
+alias bi="brew install"
+alias ba="brew autoremove"
+alias bdr="brew doctor"
+alias bcn="brew cleanup"
+alias bud="brew upgrade"
+alias bug="brew upgrade"
+alias bcub="brew update && brew outdated --cask"
+alias bcug="brew upgrade --cask && brew cleanup"
+alias bfug="brew upgrade --formula"
+alias bo="brew outdated"
+
+#uv
+alias uva="uv add"
+alias uvi="uv init"
+alias uvl="uv lock"
+alias uvr="uv run"
+alias uvrm=" uv remove"
+alias uvs="uv sync"
+alias uvt="uv tree"
 
 # zsh
 alias rsh="source ~/.zshrc"
