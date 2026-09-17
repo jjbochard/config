@@ -23,7 +23,6 @@ plugins=(
     vscode
     z
     poetry
-    conda
     brew
     colored-man-pages
     sudo
@@ -89,12 +88,10 @@ alias cpcfg="cp ~/.zshrc $config_folder_path &&
 cp ~/.oh-my-zsh/themes/agnoster.zsh-theme $config_folder_path &&
 cp ~/Library/Application\ Support/Code/User/settings.json $config_folder_path &&
 cp ~/Library/Application\ Support/Code/User/keybindings.json $config_folder_path"
-
 # =========================================
 
 # Syntax highlighting
 source ~/.oh-my-zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.plugin.zsh
-
 # =========================================
 
 # Pyenv
@@ -106,10 +103,6 @@ source ~/.oh-my-zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.plug
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init --path)"
-
-# =========================================
-# Miniconda
-export PATH="$HOME/miniconda3/bin:$PATH"
 # =========================================
 
 # Java
@@ -117,6 +110,7 @@ export JAVA_HOME=$(/usr/libexec/java_home)
 export PATH="$JAVA_HOME/bin:$PATH"
 export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 # =========================================
+
 # Spark
 export SPARK_HOME=/opt/homebrew/opt/apache-spark/libexec
 export PATH="$SPARK_HOME/bin:$PATH"
@@ -128,18 +122,4 @@ if [ "$(arch)" = "arm64" ]; then
 else
     eval "$(/usr/local/bin/brew shellenv)"
 fi
-
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/Users/jeremy/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/Users/jeremy/miniconda3/etc/profile.d/conda.sh" ]; then
-        . "/Users/jeremy/miniconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/Users/jeremy/miniconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
+# ==========================================
