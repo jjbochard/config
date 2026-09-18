@@ -17,10 +17,13 @@
         "source.unusedImports": "never",
     },
 
-    "ruff.lint.enable": false,
+    "ruff.lint.enable": true,
     // "ruff.args": [
     //     "--ignore", "I001", "I002", "I003"
     // ],
+    "ruff.configurationPreference": "filesystemFirst",
+    "flake8.enabled": false,
+    "editor.defaultFoldingRangeProvider": "charliermarsh.ruff",
 
 
     // Notebook
@@ -90,6 +93,7 @@
     "editor.inlineSuggest.edits.allowCodeShifting": "never",
     "editor.inlineSuggest.edits.renderSideBySide": "never",
 
+    "window.density.layout": "compact",
 
     "files.insertFinalNewline": true,
     "files.trimFinalNewlines": true,
@@ -112,9 +116,6 @@
     // IA
     "chat.disableAIFeatures": true,
     "chat.agent.thinking.terminalTools": false,
-    "github.copilot.nextEditSuggestions.enabled": false,
-    "github.copilot.chat.gemini35FlashReducedToolUsePrompt.enabled": false,
-
 
     "auto-rename-tag.activationOnLanguage": [
         "html",
@@ -122,5 +123,13 @@
         "php",
         "javascript"
     ],
-    "window.density.layout": "compact",
+
+    "yaml.disableSchemaDetection": [
+        "**/.github/workflows/*.yml",
+        "**/.github/workflows/*.yaml",
+        "**/.gitea/workflows/*.yml",
+        "**/.gitea/workflows/*.yaml",
+        "**/.forgejo/workflows/*.yml",
+        "**/.forgejo/workflows/*.yaml"
+    ],
 }
